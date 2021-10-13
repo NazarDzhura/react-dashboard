@@ -6,7 +6,7 @@ import './assets/css/grid.css'
 import './assets/css/index.css'
 import Layout from "./components/layout/Layout";
 
-document.title = 'React Dashboard'
+document.title = 'Synthesis'
 
 ReactDOM.render(
   <React.StrictMode>

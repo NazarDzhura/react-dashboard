@@ -5,8 +5,10 @@
   --second-bg: #fafafb;
   --txt-color: #455560;
   --txt-white: #fff;
-  --main-color: #349eff;
-  --second-color: #62b4ff;
+  --main-color: #6f00ff;
+  /*#349eff*/
+  --second-color: #9400d3;
+  /*#62b4ff*/
   --box-shadow: rgba(149, 157, 165, .2) 0px 8px 24px;
 
   --sidebar-width: 300px;
@@ -89,7 +91,7 @@ input:focus {
   text-transform: capitalize;
 }
 
-.card__header ~ .card__body {
+.card > div ~ div{
   margin-top: 30px;
 }
 
