@@ -1,9 +1,10 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import Chart from 'react-apexcharts'
 import StatusCard from "../components/status-card/StatusCard";
 import statusCards from '../assets/JsonData/status-card-data.json'
-import {Link} from "react-router-dom";
 import Table from "../components/table/Table";
+import Badge from "../components/badge/Badge";
 
 const chartOptions = {
     series: [{
@@ -120,14 +121,14 @@ const latestOrders = {
         },
         {
             id: "#OD1712",
-            user: "frank iva",
+            user: "Jessyca Walker",
             date: "1 Jun 2021",
             price: "$400",
             status: "paid"
         },
         {
             id: "#OD1713",
-            user: "anthony baker",
+            user: "Demario Zulauf",
             date: "27 Jun 2021",
             price: "$200",
             status: "refund"
@@ -152,7 +153,9 @@ const renderOrderBody = (item, index) => (
         <td>{item.user}</td>
         <td>{item.price}</td>
         <td>{item.date}</td>
-        <td><span>{item.status}</span></td>
+        <td>
+            <Badge type={orderStatus[item.status]} content={item.status} />
+        </td>
     </tr>
 )
 
