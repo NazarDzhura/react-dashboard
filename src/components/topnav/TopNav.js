@@ -2,6 +2,7 @@ import React from 'react';
 import './topnav.css'
 import {Link} from "react-router-dom";
 import Dropdown from "../dropdown/Dropdown";
+import ThemeMenu from "../thememenu/ThemeMenu";
 import notifications from '../../assets/JsonData/notification.json'
 import user_image from '../../assets/images/nazar.jpg'
 import user_menu from '../../assets/JsonData/user_menus.json'
@@ -63,7 +64,7 @@ function TopNav() {
                     />
                 </div>
                 <div className="topnav__right-item">
-                    <Dropdown/>
+                    <ThemeMenu/>
                 </div>
             </div>
         </div>
